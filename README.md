@@ -28,7 +28,7 @@ Proxy angularjs $http methods and added cancel mehtod
 
 var canceler = $q.defer();
 
-new Proxy({
+var p = new Proxy({
   $create: function(){
     return $http({
       ...
@@ -43,4 +43,11 @@ new Proxy({
   }
 });
 
+// methods form $http service
+p.then(...)
+p.catch(...)
+p.finally(...)
+
+// custom method
+p.cancel()
 ```
