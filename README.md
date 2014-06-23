@@ -1,7 +1,9 @@
 JS Proxy
 =======
 
-Goal: proxy mehtods form one object to another
+#Goal
+
+Call object's methods from another object
 
 ```javascript
  return new Proxy({
@@ -10,7 +12,7 @@ Goal: proxy mehtods form one object to another
       ...
     },
 
-    // what methods should be peoxied
+    // array of the methods that should be proxied
     $methods: [...],
 
     // additional methods
@@ -22,7 +24,7 @@ Goal: proxy mehtods form one object to another
 
 
 Example:
-Proxy angularjs $http methods and added cancel mehtod
+Proxy methods from angularjs $http service and add custom `cancel` method:
 
 ```javascript
 
