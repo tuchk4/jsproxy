@@ -7,7 +7,7 @@ Call object's methods from another object
 
 ```javascript
  return new Proxy({
-    // closure for creating object for proxing
+    // closure for creating object for proxying
     $create: function(){
       ...
     },
