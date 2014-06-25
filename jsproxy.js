@@ -7,11 +7,11 @@
     } else if(typeof define === 'function' && define.amd) {
         // AMD. Register as an anonymous module.
         define(function() {
-            return(root.Boop = factory());
+            return(root.Proxy = factory());
         });
     } else {
         // Browser globals
-        root.Boop = factory();
+        root.Proxy = factory();
     }
 }(this, function() {
   
